@@ -1,0 +1,52 @@
+Task-1:
+
+ def slice_email(email):
+ 
+  username, domain = email.split('@')
+  return username, domain
+
+# Example usage:
+email = "your_email@example.com"
+username, domain = slice_email(email)
+print("Username:", username)
+print("Domain:", domain)
+
+
+Task-3:
+  
+def create_acronym(input_string):
+
+  words = input_string.split()
+  acronym = ""
+  for word in words:
+    acronym += word[0].upper()
+  return acronym
+
+# Example usage:
+input_string = "Coding Ninjas"
+acronym = create_acronym(input_string)
+print(acronym)  # Output: CN
+
+Task-5:
+
+import random
+
+def roll_die():
+    """Simulates a random die roll."""
+    return random.randint(1, 6)
+
+def main():
+    while True:
+        user_input = input("Enter 'roll' to roll a die, or 'quit' to exit: ")
+
+        if user_input.lower() == "roll":
+            result = roll_die()
+            print("You rolled a:", result)
+        elif user_input.lower() == "quit":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid input. Please enter 'roll' or 'quit'.")
+
+if __name__ == "__main__":
+    main()
