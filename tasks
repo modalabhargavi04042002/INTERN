@@ -11,6 +11,25 @@ username, domain = slice_email(email)
 print("Username:", username)
 print("Domain:", domain)
 
+Task-2:
+
+import random
+def generate_random_story():
+    characters = ["Alice", "Bob", "Charlie"]
+    places = ["forest", "beach", "castle"]
+    actions = ["walked", "ran", "swam"]
+    adjectives = ["happy", "sad", "excited"]
+    random_character = random.choice(characters)
+    random_place = random.choice(places)
+    random_action = random.choice(actions)
+    random_adjective = random.choice(adjectives)
+
+    # Construct the story using the chosen elements
+    story = f"{random_character} {random_action} to the {random_place} and felt {random_adjective}."
+    return story
+if __name__ == "__main__":
+    story = generate_random_story()
+    print(story)
 
 Task-3:
   
